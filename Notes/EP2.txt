@@ -1,0 +1,15 @@
+createElement - Returns object
+npm - package manager
+package.json - config to npm
+^ - in npm upgrade to minor versions (install any minor version)
+~ - in npm upgrade to major versions
+parcel - bundler like webpack/vite  - npm install -D parcel 
+package-lock.json - keeps track of exact version that is being installed
+parcel - package-lock.json - integrity - hash
+  
+
+transitive dependencies - a dependency having a dependency having a dependency and so on
+npx - execute a package
+import
+Browser scripts cannot have imports or exports - > index.html -> type = module
+Browsers list for compatibility - package.json ex- cover 99.5% in us, last 5 Chrome versions, last 2 versions
