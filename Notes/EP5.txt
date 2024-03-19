@@ -1,0 +1,11 @@
+Export Default vs Named Exports (Curly braces to import)
+export default component -- import component from "path"
+export const component  -- import {component} from "path"
+
+Can have both named and default export in a single file ideally main component as "export default component"
+and other minor things as "export const component"
+
+
+React - Faster DOM Manipulation, Diffing
+
+Hooks :

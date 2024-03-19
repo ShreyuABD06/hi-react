@@ -1,3 +1,64 @@
 #parent{
     color:red
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid rgb(186, 172, 172);
+}
+
+.logo{
+    width:10vw;
+}
+
+.nav-items {
+padding: 10px;
+}
+
+.nav-items > ul{
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.res-card {  
+    margin: 5px;
+    width:280px;
+    
+    background-color:#f0f0f0;
+    padding: 5px;  
+    border-radius: 5px;    
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-logo{
+    width:98%;
+    height: 50%;
+    
+}
+
+.filter-btn{
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}

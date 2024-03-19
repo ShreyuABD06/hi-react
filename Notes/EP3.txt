@@ -1,0 +1,21 @@
+Script for build - > package.json -> "start": "parcel index.html" -> npm run start
+
+JS Engines understand only ECMAScript
+Parcel transpiles JSX for jS engine using babel
+JSX -> Babel (transpiles )-> React.createElement => ReactElement => JS Object => HTMLElement(render)
+
+Babel => is a javascript compiler ---> transpiles code in one format to different form (Abstract syntax tree)
+
+
+React Components - 
+1. Class Based component
+2. Fuctional Components
+
+<Title/>
+{Title()}
+<Title></Title>
+
+
+Component Composition - Components within components
+
+Cross Site Scripting -> JSX Prevents Automatically { execute a function }

@@ -1,0 +1,25 @@
+Plan - > Restaurant
+
+
+Config Driven UI
+Dont use index as key - 
+
+Header 
+ - Logo
+ - Nav Items
+
+Body 
+ - Search
+ - Restaurant Container
+   - Restaurant Card
+     - Image
+     - Name 
+     - Star Ratings
+     - Cuisine
+     - Delivery Time
+
+Footer
+ - Copyrights 
+ - Links
+ - Address
+ - Contact
