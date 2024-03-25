@@ -1,0 +1,19 @@
+UseEffect : 
+    If No Dependency Array,will render everytime the component is rendered
+    If dependency array is empty, use effect is called only on initial render,  just once when the component is initially rendered
+    If anything in dependency array - Use effect called only when the dependency changes
+
+UseState :
+    Never use useState outside of the component
+    Dont create it inside if else blocks/loops/functions
+
+
+Routers 
+    - Create routing configs - createBrowserRouter
+    - Provide the routing config to App - RouterProvider
+    root.render(<RouterProvider router={appRouter}/>);
+    - Checkout react router dom page for other type of routers 
+    - useRouteError - Hook for logging
+    - Outlet - Component for loading children
+    - Link - Component like anchor tag
+    - Client Side Routing / Server Side Routing
