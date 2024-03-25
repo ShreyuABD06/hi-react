@@ -47,3 +47,5 @@
 
 - import react
 - index.html - Script - type = module
+
+# React Algorithm - > Reconciliation Algorith also known as React Fiber

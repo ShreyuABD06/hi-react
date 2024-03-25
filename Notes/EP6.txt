@@ -1,0 +1,17 @@
+Monolith vs Microservice
+
+- Separation of concern 
+- Single Resposibility
+
+useState - Maintains state of the component - Whenever a state variable updates/changes, react re-renders the component
+  - Update Variable and rerenders the page(Diffing)
+useEffect
+- When will the call back function be called  -- After component renders
+
+Fetch - Super power of JS Engine
+
+CORS Policy - 
+
+Optional Chaining
+
+Shimmer UI - 

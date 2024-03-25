@@ -9,3 +9,13 @@ and other minor things as "export const component"
 React - Faster DOM Manipulation, Diffing
 
 Hooks :
+- useState()  -  Maintains state of the component - Whenever a state variable updates/changes, react re-renders the component
+- useEffect() -
+
+
+React Fiber - > Reconciliation Algorithm also known as React Fiber (React 16)
+  - New way of finding the Diff and updating the DOM - 
+  - Incremental rendering: the ability to split rendering work into chunks and spread over multiple frames
+Virtual DOM - Representation of the actual DOM -> (Virtual DOM- Kind of Object Representation)
+ - Existed long before react, but react built it's core algorithm around virtual dom
+Diff Algorith - Finds out the difference between the updated virtual DOM and the original virtual DOM
