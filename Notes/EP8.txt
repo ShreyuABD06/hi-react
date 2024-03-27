@@ -1,0 +1,31 @@
+
+Constuctor - Super (Props) :
+
+render
+
+ComponentDidMount -  
+
+this.setState
+
+Render Phase - Counstructor and Render Phase
+
+Commit Phase - 
+
+Multiple children - Batch Render Phase then batch commit phase
+
+
+Mounting Cycle 
+    - Constuctor
+    - Render 
+    - ComponentDidMount
+        - setState
+Updating Cycle 
+    - setState
+    - Render 
+    -ComponentDidUpdate
+
+Unmounting Cycle -
+
+
+
+In use effect - for clearing things like componentwillunmount - use return ()=>{}
