@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { lazy,Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import Body from './components/Body';
 import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
+import Shimmer from './components/Shimmer';
+
 import RestaurantMenu from './components/RestaurantMenu';
 
 import { createBrowserRouter, RouterProvider,Outlet } from 'react-router-dom';
+//import Grocery from './components/Grocery';
 
 //WithoutJSX => React.createElement => ReactElement => JS Object => HTMLElement(render)
 // const heading = React.createElement("div", {id:"parent"},
@@ -21,7 +24,7 @@ import { createBrowserRouter, RouterProvider,Outlet } from 'react-router-dom';
 
 
 //With JSX -> JSX -> React.createElement => ReactElement => JS Object => HTMLElement(render)
-const jsxHeading = <h1 id="parent">Hey to JSX</h1>
+//const jsxHeading = <h1 id="parent">Hey to JSX</h1>
 
 
 //Component
@@ -50,9 +53,12 @@ const jsxHeading = <h1 id="parent">Hey to JSX</h1>
 
 //https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=23678&catalog_qa=undefined&submitAction=ENTER
 
+
+const Grocery = lazy(()=>import("./components/Grocery"));
+
 const AppLayout = () =>
      (
-     <div className="app">
+     <div className="app box-border">
         <Header/>
         <Outlet/>
     </div>
@@ -76,6 +82,11 @@ const appRouter = createBrowserRouter([
             { 
                 path:"/contact", 
                 element:<Contact/>
+            }
+            ,
+            { 
+                path:"/grocery", 
+                element:<Suspense fallback={<Shimmer/>}><Grocery/></Suspense>
             }
             ,
             { 

@@ -1,0 +1,17 @@
+npm install -D tailwindcss postcss
+npx tailwindcss init
+
+{
+  "plugins": {
+    "tailwindcss": {}
+  }
+}
+
+In tailwind.config.js - add to content - "./src/**/*.{html,js,ts,jsx,tsx}"
+
+
+In Index.css - 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

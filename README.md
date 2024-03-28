@@ -49,3 +49,8 @@
 - index.html - Script - type = module
 
 # React Algorithm - > Reconciliation Algorith also known as React Fiber
+
+# Tailwind CSS - postcss (Tool for transforming CSS with javascript)
+
+- npm install -D tailwindcss postcss
+- npx tailwindcss init
