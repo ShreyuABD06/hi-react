@@ -54,3 +54,12 @@
 
 - npm install -D tailwindcss postcss
 - npx tailwindcss init
+
+# Redux
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to app
+- Create Slice (Cart slice)
+- Dispatch (Action)
+- Selector (Subscribe)
