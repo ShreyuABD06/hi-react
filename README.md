@@ -80,3 +80,5 @@
 - Install - npm i -D @babel/preset-react (jsx is'nt supported error)
 - Include @babel/preset-react in babel config -- runtime: 'automatic'
 - Install npm i -D @testing-library/jest-dom (toBeInTheDocument is not a function)
+
+- "watch-test":"jest --watch" -- Add in package.json for automatic running of npm run test command
