@@ -2,7 +2,15 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div><h1 className="p-4 m-2 font-bold text-3xl">
+      Contact Us
+      </h1>
+      <form>
+        <input type="text" className="border border-black p-2 m-2" placeholder="name"/>
+        <input type="text" className="border border-black p-2 m-2" placeholder="comment"/>
+        <button className="border border-black p-2 m-2 bg-gray-100 rounded-lg">Submit</button>
+      </form>
+      </div>
   )
 }
 

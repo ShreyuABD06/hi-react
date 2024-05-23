@@ -6,7 +6,7 @@ const cartSlice = createSlice({
         items : []
     },
     reducers :{
-        //Mutating the state
+        //Mutating the state  --Redux Uses Immer behind the scene
         addItem : (state, action)=>{
             state.items.push(action.payload);
         },
@@ -14,6 +14,7 @@ const cartSlice = createSlice({
             state.items.pop();
         },
         clearCart : (state)=>{
+            //Mutate existing state or return new state (return {items:[]};)
             state.items.length =0;
         }
     }

@@ -5,9 +5,9 @@ import { addItem } from "../utils/cartSlice";
 const ItemList = ({items}) => {
 
     const dispatch = useDispatch();
-    const handleAddItem = () =>{
+    const handleAddItem = (item) =>{
         //Dispatch An Action
-        dispatch(addItem("pizza"))
+        dispatch(addItem(item))
     }
 
     // console.log(items)
@@ -26,7 +26,7 @@ const ItemList = ({items}) => {
                         </div>
                         <div className="w-3/12 min-w-40 ml-32 mh-36">
                             <div className="absolute">
-                            <button className="p-2 mx-[100px] my-28 rounded-lg bg-black text-white shadow-lg" onClick={handleAddItem}>Add +</button>
+                            <button className="p-2 mx-[100px] my-28 rounded-lg bg-black text-white shadow-lg" onClick={()=>handleAddItem(item)}>Add +</button>
                             </div>
                         <img src={CDN_URL + item?.card?.info?.imageId} className="w-56 h-36"/>
                         

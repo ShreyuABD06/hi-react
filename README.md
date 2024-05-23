@@ -63,3 +63,20 @@
 - Create Slice (Cart slice)
 - Dispatch (Action)
 - Selector (Subscribe)
+
+# Test
+
+- Install react testing library - npm install -dev @testing-library/react
+- Install jest - npm install -D jest
+- Install babel dependencies --Jest website ---npm install --save-dev babel-jest @babel/core @babel/preset-env
+- create babel.config.js and add config from jest website
+- Configure Parcel config file to disable default Babel traspilation - .parcelrc file (Take content from Parcel Website - LHS - Javascript - RHS - Babel) (Thia ia to use above config instead of default)
+- Jest Conjiguration -npx jest --init
+- install jsdom (From react testig library If you're using Jest 28 or later) ---
+- npm install --save-dev jest-environment-jsdom
+
+- JSDOM Browser like for testEnvironment
+
+- Install - npm i -D @babel/preset-react (jsx is'nt supported error)
+- Include @babel/preset-react in babel config -- runtime: 'automatic'
+- Install npm i -D @testing-library/jest-dom (toBeInTheDocument is not a function)
